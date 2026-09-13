@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
+    <title>Glosario de Conceptos - TP1 TDP2</title>
+    <!-- Vinculamos nuestro CSS puro -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenido a mi sitio web</h1>
-    <p>Este es un párrafo de ejemplo dentro del cuerpo de la página.</p>
-    <a href="https://www.freecodecamp.org/espanol/news/los-mejores-ejemplos-html-y-html5/">Aprende más en freeCodeCamp</a>
+
+    <header>
+        <h1>Taller de Programación 2</h1>
+        <p>Ingresá los conceptos vistos en la materia para consultarlos.</p>
+    </header>
+
+    <main class="contenedor">
+        
+        <section class="formulario-seccion">
+            <h2>Agregar nuevo concepto</h2>
+  
+            <form id="conceptoForm">
+                <div class="campo">
+                    <label for="nombre">Nombre del concepto:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="desarrollo">Descripción:</label>
+                    <textarea id="desarrollo" name="desarrollo" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-agregar">Guardar Concepto</button>
+            </form>
+        </section>
+
+
+        <section class="vista-seccion">
+            <h2>Conceptos cargados</h2>
+            <button id="btnBorrarTodo" style="background-color: #e74c3c; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; margin-bottom: 15px;">Borrar todos los conceptos</button>
+    
+            <div id="listaConceptos" class="grid-conceptos">
+          
+            </div>
+        </section>
+
+    </main>
+
+  
+    <script src="app.js"></script>
 </body>
 </html>
