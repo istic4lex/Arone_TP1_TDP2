@@ -40,8 +40,8 @@ Se utilizaron dos ramas para la realización del proyecto
 
 Dificultades:
 
-1_ Crear la rama dev y actualizar los cambios para la producción
-2_ Funcionalidad del botón de eliminar un concepto debido a un error de app.js
+- Crear la rama dev y actualizar los cambios para la producción
+- Funcionalidad del botón de eliminar un concepto debido a un error de app.js
 
 Reflexión:
 
